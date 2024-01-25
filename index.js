@@ -63,7 +63,7 @@ app.use("/api/types", typesRoutes);
 //   });
 // });
 
-const PORT = process.env.PORT || 8800;
-app.listen(8800, () => {
+const PORT = 8800;
+app.listen(process.env.PORT || PORT, () => {
   console.log("Connected");
 });
